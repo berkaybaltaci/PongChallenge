@@ -45,8 +45,8 @@ class Ball: ObservableObject {
     }
     
     func resetPosition() {
-        x = CommonConstants.phoneSize().x / 2
-        y = CommonConstants.phoneSize().y / 2
+        x = CommonConstants.deviceScreenSize().x / 2
+        y = CommonConstants.deviceScreenSize().y / 2
         
         horizontalDirection = Int.random(in: 0...1) == 0 ? .left : .right
         verticalDirection = Int.random(in: 0...1) == 0 ? .up : .down

@@ -11,7 +11,7 @@ struct CommonConstants {
     
     static let imageName = "ball_resized"
     
-    static let phoneSize = {
+    static let deviceScreenSize = {
         let screenBounds = UIScreen.main.bounds
         let width = screenBounds.width
         let height = screenBounds.height
