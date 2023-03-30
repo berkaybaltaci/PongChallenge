@@ -11,6 +11,12 @@
 		2203D47029D59F2200698366 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203D46F29D59F2200698366 /* ContentView.swift */; };
 		2203D47229D59F2300698366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2203D47129D59F2300698366 /* Assets.xcassets */; };
 		2203D47529D59F2300698366 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2203D47429D59F2300698366 /* Preview Assets.xcassets */; };
+		2203D47C29D5A10F00698366 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203D47B29D5A10F00698366 /* Ball.swift */; };
+		2203D48329D5A1AF00698366 /* HorizontalDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203D48229D5A1AF00698366 /* HorizontalDirection.swift */; };
+		2203D48529D5A1C400698366 /* VerticalDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203D48429D5A1C400698366 /* VerticalDirection.swift */; };
+		2203D48729D5A3ED00698366 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203D48629D5A3ED00698366 /* ContentViewModel.swift */; };
+		2203D48A29D5AC6200698366 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203D48929D5AC6200698366 /* CommonConstants.swift */; };
+		2203D48C29D5ACD200698366 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2203D48B29D5ACD200698366 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		2203D46F29D59F2200698366 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2203D47129D59F2300698366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2203D47429D59F2300698366 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2203D47B29D5A10F00698366 /* Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
+		2203D48229D5A1AF00698366 /* HorizontalDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalDirection.swift; sourceTree = "<group>"; };
+		2203D48429D5A1C400698366 /* VerticalDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalDirection.swift; sourceTree = "<group>"; };
+		2203D48629D5A3ED00698366 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		2203D48929D5AC6200698366 /* CommonConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
+		2203D48B29D5ACD200698366 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,10 @@
 		2203D46C29D59F2200698366 /* PongChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				2203D48829D5AC4F00698366 /* constants */,
+				2203D47D29D5A14700698366 /* models */,
+				2203D47F29D5A16000698366 /* views */,
+				2203D47E29D5A15500698366 /* viewmodels */,
 				2203D46D29D59F2200698366 /* PongChallengeApp.swift */,
 				2203D46F29D59F2200698366 /* ContentView.swift */,
 				2203D47129D59F2300698366 /* Assets.xcassets */,
@@ -65,6 +81,40 @@
 				2203D47429D59F2300698366 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2203D47D29D5A14700698366 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				2203D47B29D5A10F00698366 /* Ball.swift */,
+				2203D48229D5A1AF00698366 /* HorizontalDirection.swift */,
+				2203D48429D5A1C400698366 /* VerticalDirection.swift */,
+				2203D48B29D5ACD200698366 /* Player.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		2203D47E29D5A15500698366 /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				2203D48629D5A3ED00698366 /* ContentViewModel.swift */,
+			);
+			path = viewmodels;
+			sourceTree = "<group>";
+		};
+		2203D47F29D5A16000698366 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		2203D48829D5AC4F00698366 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				2203D48929D5AC6200698366 /* CommonConstants.swift */,
+			);
+			path = constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2203D47C29D5A10F00698366 /* Ball.swift in Sources */,
 				2203D47029D59F2200698366 /* ContentView.swift in Sources */,
+				2203D48A29D5AC6200698366 /* CommonConstants.swift in Sources */,
+				2203D48729D5A3ED00698366 /* ContentViewModel.swift in Sources */,
+				2203D48C29D5ACD200698366 /* Player.swift in Sources */,
 				2203D46E29D59F2200698366 /* PongChallengeApp.swift in Sources */,
+				2203D48529D5A1C400698366 /* VerticalDirection.swift in Sources */,
+				2203D48329D5A1AF00698366 /* HorizontalDirection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
